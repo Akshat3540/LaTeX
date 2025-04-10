@@ -1,0 +1,24 @@
+% Aim: Develop a LaTeX script to create a document that consists of the following two mathematical equations. 
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsmath}
+
+\begin{document}
+	
+	\section*{Equations Set 1}
+	
+	\begin{align}
+		x &= -b \pm \frac{\sqrt{b^2 - 4ac}}{2a} \notag \\
+		\text{where} \quad a = 4, b = 6, c = 1 \notag \\ \notag \\
+		x &= \frac{(-6) \pm \sqrt{6^2 - 4 \cdot 4 \cdot 1}}{2 \cdot 4} = \frac{-6 \pm \sqrt{36 - 16}}{8} = \frac{-6 \pm 2\sqrt{5}}{8} \notag 
+	\end{align}
+	
+	\section*{Equations Set 2}
+	
+	\begin{align}
+		\varphi_{\sigma}^{\lambda} \cdot A_{t} &= \sum_{\pi \in C_{t}} \text{sgn}(\pi) \cdot \varphi_{\sigma}^{\lambda} \cdot \varphi_{\pi}^{\lambda} \notag \\
+		&= \sum_{\tau \in C_{\sigma}^{t}} \text{sgn}(\sigma^{-1} \tau \sigma) \varphi_{\sigma}^{\lambda} \varphi_{\sigma^{-1} \tau \sigma}^{\lambda} \notag \\
+		&= A_{\sigma}^{t} \varphi_{\sigma}^{\lambda} \notag 
+	\end{align}
+	
+\end{document}

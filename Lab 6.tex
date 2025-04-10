@@ -1,0 +1,25 @@
+% Aim: Develop a LaTeX script to include the side-by-side graphics/pictures/figures in the document by using the subgraph concept. 
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\begin{document}
+
+	\begin{figure}
+		\centering
+		\begin{subfigure}{0.45\linewidth}
+			\includegraphics[width=\linewidth]{image1.png}
+			\caption{Caption for image 1}
+			\label{fig:subfig1}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.45\linewidth}
+			\includegraphics[width=\linewidth]{image2.png}
+			\caption{Caption for image 2}
+			\label{fig:subfig2}
+		\end{subfigure}
+		\caption*{Fig: Combined caption for both images}
+		\label{fig:subfigures}
+	\end{figure}
+	
+\end{document}

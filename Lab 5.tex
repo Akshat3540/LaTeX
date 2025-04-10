@@ -1,0 +1,30 @@
+% Aim: Develop a LaTeX script to create a document that contains the following table with proper labels. 
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{array, booktabs, multicol, multirow}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+	\centering
+	\textbf{\Large{Student Details and Marks}}
+	\vspace{0.1in}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{2}{*}{\textbf{S.No}} & \multirow{2}{*}{\textbf{USN}} & \multirow{2}{*}{\textbf{Student Name}} & \multicolumn{3}{c|}{\textbf{Marks}} \\ 
+			
+			\cline{4-6} % Horizontal line from column 4 to 6
+			& & & \textbf{Subject1} & \textbf{Subject2} & \textbf{Subject3} \\ % Sub-headers for marks
+			\hline
+			\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{1BH23CS002} & \multicolumn{1}{c|}{Akif} & 89 & 60 & 90 \\ % Data rows
+			\hline
+			\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{1BH23CS003} & \multicolumn{1}{c|}{Akshat} & 78 & 45 & 98 \\
+			\hline
+			\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{1BH23CS004} & \multicolumn{1}{c|}{Ananya} & 67 & 55 & 59 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+\end{document}
